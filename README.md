@@ -63,7 +63,7 @@ This repository provides Terraform scripts for provisioning a single Linux virtu
 6. **Access your VM**:
 
    Once the deployment is complete, you can SSH into your Linux VM using the public IP address displayed in the output.
-
+   or use command az vm list-ip-addresses -o table   # to display Ip addresses
 ## Configuration
 
 You can customize the following variables in the `variables.tf` file:

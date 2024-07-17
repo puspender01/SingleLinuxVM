@@ -9,7 +9,7 @@ terraform {
 }
 provider "azurerm" {
   features {
-     virtual_machine {
+    virtual_machine {
       detach_implicit_data_disk_on_deletion = false
       delete_os_disk_on_deletion            = true
       graceful_shutdown                     = false

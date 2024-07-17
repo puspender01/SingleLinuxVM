@@ -1,78 +1,93 @@
+# SingleLinuxVM
 
-SingleLinuxVM
 This repository provides Terraform scripts for provisioning a single Linux virtual machine on Azure. It simplifies the process of creating and managing cloud infrastructure.
 
-Table of Contents
-Prerequisites
-Usage
-Configuration
-Resources Created
-License
-Contributing
-Prerequisites
-Terraform (v1.x or later)
-An active Azure account
-Azure CLI installed and configured
-Usage
-Clone the repository:
+## Table of Contents
 
-bash
-Copy code
-git clone https://github.com/puspender01/SingleLinuxVM.git
-cd SingleLinuxVM
-Configure your Azure credentials:
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Resources Created](#resources-created)
+- [License](#license)
+- [Contributing](#contributing)
 
-Ensure that you are logged into your Azure account:
+## Prerequisites
 
-bash
-Copy code
-az login
-Initialize Terraform:
+- [Terraform](https://www.terraform.io/downloads.html) (v1.x or later)
+- An active [Azure account](https://azure.microsoft.com/en-us/free/)
+- Azure CLI installed and configured
 
-Run the following command to initialize the Terraform configuration:
+## Usage
 
-bash
-Copy code
-terraform init
-Plan your deployment:
+1. **Clone the repository**:
 
-Review the changes that will be made:
+   
+   git clone https://github.com/puspender01/SingleLinuxVM.git
+   cd SingleLinuxVM
+   
 
-bash
-Copy code
-terraform plan
-Apply the configuration:
+2. **Configure your Azure credentials**:
 
-Create the resources defined in your Terraform files:
+   Ensure that you are logged into your Azure account:
 
-bash
-Copy code
-terraform apply
-Type yes when prompted to confirm.
+   
+   az login
+   
 
-Access your VM:
+3. **Initialize Terraform**:
 
-Once the deployment is complete, you can SSH into your Linux VM using the public IP address displayed in the output.
+   Run the following command to initialize the Terraform configuration:
 
-Configuration
-You can customize the following variables in the variables.tf file:
+   
+   terraform init
+   
 
-vm_size: Size of the virtual machine (e.g., Standard_DS1_v2).
-admin_username: The username for the admin account.
-admin_password: The password for the admin account.
-Resources Created
+4. **Plan your deployment**:
+
+   Review the changes that will be made:
+
+   
+   terraform plan
+   
+
+5. **Apply the configuration**:
+
+   Create the resources defined in your Terraform files:
+
+   
+   terraform apply
+   
+
+   Type `yes` when prompted to confirm.
+
+6. **Access your VM**:
+
+   Once the deployment is complete, you can SSH into your Linux VM using the public IP address displayed in the output.
+
+## Configuration
+
+You can customize the following variables in the `variables.tf` file:
+
+- `vm_size`: Size of the virtual machine (e.g., `Standard_DS1_v2`).
+- `admin_username`: The username for the admin account.
+- `admin_password`: The password for the admin account.
+
+## Resources Created
+
 The following Azure resources are created:
 
-A resource group
-A virtual network
-A subnet
-A network interface
-A public IP address
-A Linux virtual machine
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+- A resource group
+- A virtual network
+- A subnet
+- A network interface
+- A public IP address
+- A Linux virtual machine
 
-Contributing
+
+## Contributing
+
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
+
+---
 
 Feel free to modify any sections as needed!

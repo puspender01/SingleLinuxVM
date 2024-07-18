@@ -90,5 +90,3 @@ The following Azure resources are created:
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
 
 ---
-
-Feel free to modify any sections as needed!

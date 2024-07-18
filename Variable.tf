@@ -1,5 +1,5 @@
 variable "prefix" {
-  default = "pusp"
+  default = "givevalue"
 }
 variable "location" {
   default = "Eastus"

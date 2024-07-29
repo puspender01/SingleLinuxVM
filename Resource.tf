@@ -67,7 +67,6 @@ resource "azurerm_virtual_machine" "Test1" {
   location              = var.location
   resource_group_name   = azurerm_resource_group.Test1.name
   vm_size               = var.vm_size
-
   storage_image_reference {
     publisher = "canonical"
     offer     = "0001-com-ubuntu-server-focal"

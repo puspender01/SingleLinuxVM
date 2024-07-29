@@ -4,6 +4,6 @@ variable "prefix" {
 variable "location" {
   default = "Eastus"
 }
-variable "vmsize" {
+variable "vm_size" {
   default = "Standard_DS1_v2"
 }
